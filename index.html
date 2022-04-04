@@ -1,12 +1,119 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body>
-    
-</body>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="nav">
+      <span class="navbar" id="layout">Layout3</span>
+      <span class="navbar" id="about">About</span>
+      <span class="navbar" id="service"> Service</span>
+      <span class="navbar" id="contact"> Contact</span>
+    </div>
+
+    <div class="container">
+      <div class="one">
+        <h1 class="blog">BLOG POST TITLE</h1>
+        <h4 class="test">by <span id="test">Test</span></h4>
+        <hr/>
+        <p class="post">posted on aug</p>
+        <hr id="hr">
+        <img class="img"
+          id="images"
+          src="data:image/png;base64,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"
+          alt=""
+          srcset=""
+        />
+
+        <p id="para">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique,
+          cumque nihil? Excepturi suscipit corporis enim distinctio, cum error
+          esse perferendis quo nisi quasi quam exercitationem eos tempore quia
+          explicabo molestiae sunt doloribus voluptatibus, odio laboriosam et
+          iure delectus. Ullam consequatur quidem odit ab aliquid rem reiciendis
+        
+          <br>
+           Harum
+          temporibus eum pariatur et accusantium officia rerum quos debitis
+          architecto impedit! Aliquam totam ab quo libero sunt repudiandae
+          minima veritatis est explicabo sequi nesciunt commodi, delectus 
+          <br>
+         
+          <br>
+          error. Consequuntur atque facere cumque molestiae? Est laborum vero,
+          itaque dolor corrupti facere, omnis explicabo blanditiis doloribus
+          recusandae tenetur! Maiores unde quisquam porro quia molestiae alias
+          <br>
+         
+          <br>
+           rem corrupti corporis dicta recusandae
+          consequuntur sunt nemo placeat voluptatum autem officia ex eum
+          eligendi a. Earum similique a excepturi molestias dignissimos! Ratione
+          <br>
+          <br>
+          quibusdam, est unde consequuntur rerum ipsam, praesentium deleniti
+          quidem qui asperiores commodi? Facere consectetur vitae nesciunt
+          tempora ullam iusto! Officia ut sint corrupti eveniet voluptatibus,
+          . Similique, tempora rerum. z
+        </p>
+      </div>
+      <div>
+        <div class="new">
+          <div class="search">
+            <h1>Blog search</h1>
+            <div class="page">
+              <input type="text" name="" id="" />
+              <img
+                id="image"
+                src="data:image/png;base64,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"
+                alt=""
+              />
+            </div>
+          </div>
+          <div class="name">
+            <div class="two">
+              <h1>Blog Categories</h1>
+              <div class="sow">
+                <p class="company">company Name</p>
+                <p class="company">company Name</p>
+                <p class="company">company Name</p>
+                <p class="company">company Name</p>
+                <p class="company">company Name</p>
+                <p class="company">company Name</p>
+                <p class="company">company Name</p>
+                <p class="company">company Name</p>
+              </div>
+            </div>
+            <div class="three">
+              <h1>Side wight well</h1>
+              <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dicta,
+                odio obcaecati rerum numquam earum iure, magni laboriosam
+                dignissimos quidem facere nesciunt quas repellendus? Iusto
+                dolores modi delectus magnam cupiditate, ullam hic unde minima
+                molestias odio ea officiis reiciendis ut asperiores sed?
+                Similique facilis ratione, architecto eligendi magni pariatur
+                sit esse!
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer class="footer">
+       <h4>Copyright @ 2014 website</h4>
+    </footer>
+  </body>
 </html>
